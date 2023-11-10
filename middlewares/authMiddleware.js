@@ -11,12 +11,9 @@ module.exports = (req, res, next) => {
         }
 
         const token = authorizationHeader.split(" ")[1];
-        console.log("Received Token:", token);
 
         const decodedToken = jwt.decode(token); // Use decode instead of verify here
-        console.log("Decoded Token:", decodedToken);
-        console.log("exprie date:", decodedToken.exp * 1000);
-        console.log(" date:", Date.now());
+
 
         const expirationTime = decodedToken.exp * 1000; // Convert to milliseconds
         const currentTime = Date.now();

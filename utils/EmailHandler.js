@@ -8,8 +8,8 @@ const EmailHandler = async (email, link, number) => {
             port: 587,              // Replace with the appropriate port (587 for TLS)
             secure: false,          // Set to true for SSL/TLS
             auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASSWORD
+                user: "honeysingh617522@gmail.com",
+                pass: "blpoioyhbwcpydsw"
             }
         });
 
